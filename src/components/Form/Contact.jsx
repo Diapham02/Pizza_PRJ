@@ -1,8 +1,8 @@
 import React from "react";
-
+import "../Form/ModalForm.css";
 const ContactForm = () => {
   return (
-    <form>
+    <form className="login-form" action="/submit-login" method="POST">
       <h2>Contact Us</h2>
       <label>
         Name:
@@ -12,7 +12,9 @@ const ContactForm = () => {
         Message:
         <textarea name="message" required></textarea>
       </label>
-      <button type="submit">Send</button>
+      <button className="formbtn" type="submit">
+        Send
+      </button>
     </form>
   );
 };

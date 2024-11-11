@@ -5,15 +5,11 @@ import user_icon from "./images/person.png";
 import email_icon from "./images/email.png";
 import password_icon from "./images/password.png";
 
-const RegisterForm = () => {
+const SignInForm = () => {
   return (
     <div className="container">
-      <div className="Reg_header">Register</div>
+      <div className="SignIn_header">Sign In</div>
       <div className="inputs">
-        <div className="input">
-          <img src={email_icon} alt="" />
-          <input type="email" placeholder="Email" />
-        </div>
         <div className="input">
           <img src={user_icon} alt="" />
           <input type="text" placeholder="Username" />
@@ -23,11 +19,14 @@ const RegisterForm = () => {
           <input type="password" placeholder="Password" />
         </div>
       </div>
+      <div className="forgot-password">
+        Forgot Password? <span>Click Here!</span>
+      </div>
       <div className="submit-container">
-        <button className="Submit-button">Sumbit</button>
+        <button className="Login-button">Login</button>
       </div>
     </div>
   );
 };
 
-export default RegisterForm;
+export default SignInForm;

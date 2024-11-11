@@ -1,0 +1,73 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.Reg_header, .SignIn_header {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    background: #f3e4dc;
+    height: 60px;
+    border-radius: 6px;
+}
+
+.input img{
+    margin: 0px 20px
+}
+
+.input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.submit-container {
+    display: flex;
+    margin: 30px auto;
+}
+
+.Submit-button, .Login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e68a00;
+    }
+
+    .Submit-button:hover, .Login-button:hover{
+        scale: 0.9;
+        transition: all 0.3s;
+    }
+
+.forgot-password {
+    margin: 20px;
+    padding-left: 50px;
+    font-size: 14px;
+    color: gray;
+}
+
+.forgot-password span{
+    cursor: pointer;
+    color: red;
+}
+
+.forgot-password span:hover{
+    text-decoration: underline;
+}

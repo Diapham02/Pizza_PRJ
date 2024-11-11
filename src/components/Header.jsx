@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Modal from "./Modal"; // Import the Modal component
 import HomeForm from "./Form/Home";
 import RegisterForm from "./Form/Register";
-import OrderForm from "./Form/Order";
+import SignInForm from "./Form/SignIn";
 import ContactForm from "./Form/Contact";
 import "../styles/Header.css";
 
@@ -37,7 +37,7 @@ const Header = () => {
             </button>
           </li>
           <li>
-            <button onClick={() => openModal(<OrderForm />)}>Order</button>
+            <button onClick={() => openModal(<SignInForm />)}>Sign In</button>
           </li>
           <li>
             <button onClick={() => openModal(<ContactForm />)}>Contact</button>
